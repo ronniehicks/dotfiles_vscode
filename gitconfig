@@ -1,0 +1,68 @@
+# Local/private config goes in the include
+[include]
+    path = ~/.gitconfig.local
+
+[hub]
+    protocol = https
+
+[alias]
+    branch-name = !git rev-parse --abbrev-ref HEAD
+    publish = !git push -u origin $(git branch-name)
+    unpublish = !git push origin :$(git branch-name)
+
+    co = checkout
+    count = !git shortlog -sn
+
+    re-ignore = !git rm --cached -r . && git add -A
+    ec = config --global -e
+    up = !git fetch --prune && git pull --rebase --prune $@ && git submodule update --init --recursive
+    cob = checkout -b
+    cm = !git add -A && git commit -m
+    save = !git add -A && git commit -m 'SAVEPOINT'
+    wip = !git add -u && git commit -m "WIP"
+    undo = reset HEAD~1 --mixed
+    amend = commit -a --amend
+    wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+    bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
+    bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
+    open = !open `git config remote.origin.url`
+    browse = !git open
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+
+[core]
+	excludesfile = ~/.gitignore
+    editor = vim
+	autocrlf = input
+
+[apply]
+    whitespace = nowarn
+
+[mergetool]
+    keepBackup = false
+
+[difftool]
+    prompt = false
+
+[help]
+    autocorrect = 1
+
+[push]
+    # See `git help config` (search for push.default)
+    # for more information on different options of the below setting.
+    #
+    # Setting to git 2.0 default to suppress warning message
+    default = simple
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[pager]
+	branch = false

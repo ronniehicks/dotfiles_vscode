@@ -2,3 +2,32 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+
+[submodule "zsh/plugins/zsh-syntax-highlighting"]
+	path = zsh/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "zsh/plugins/zsh-completions"]
+	path = zsh/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
+[submodule "zsh/plugins/zsh-nvm"]
+	path = zsh/plugins/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm
+[submodule "zsh/plugins/zsh-autosuggestions"]
+	path = zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+
+[submodule "vim/pack/vendor/start/nerdtree"]
+	path = vim/pack/vendor/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "vim/pack/vendor/start/nerdtree-git-plugin"]
+	path = vim/pack/vendor/start/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "vim/pack/vendor/start/vim-fugitive"]
+	path = vim/pack/vendor/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/pack/vendor/start/editorconfig-vim"]
+	path = vim/pack/vendor/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "vim/pack/vendor/start/vim-code-dark"]
+	path = vim/pack/vendor/start/vim-code-dark
+	url = https://github.com/tomasiser/vim-code-dark.git
