@@ -31,3 +31,6 @@
 [submodule "vim/pack/vendor/start/vim-code-dark"]
 	path = vim/pack/vendor/start/vim-code-dark
 	url = https://github.com/tomasiser/vim-code-dark.git
+[submodule "zsh/themes/powerlevel10k"]
+	path = zsh/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
