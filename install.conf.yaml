@@ -18,7 +18,7 @@
     # ~/.gitignore:
 - shell:
     - git submodule sync --recursive
-    - git submodule update --init --recursive
+    - git submodule update --init --force --remote
     - >
       git clean -fdx
       shell/plugins/
