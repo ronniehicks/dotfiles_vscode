@@ -8,7 +8,7 @@
     ~/.dotfiles: ""
     ~/.shell:
     ~/.vim:
-    ~/.oh-my-zsh/custom/plugins:zsh/plugins
+    ~/.oh-my-zsh/custom/plugins: zsh/plugins
     ~/.zsh:
     ~/.p10k.zsh:
     ~/.vimrc:
