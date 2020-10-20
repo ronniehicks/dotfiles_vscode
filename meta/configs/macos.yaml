@@ -1,0 +1,4 @@
+- shell:
+    - sudo softwareupdate -i -a
+    - sudo xcode-select --install
+    - macos/defaults.sh
