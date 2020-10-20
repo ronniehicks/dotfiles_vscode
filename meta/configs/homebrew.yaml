@@ -1,0 +1,5 @@
+- link:
+  ~/Brewfile: macos/Brewfile
+
+- shell:
+    - brew bundle
