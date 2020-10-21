@@ -1,4 +1,7 @@
+- shell:
+    - git submodule update --init --recursive
 - link:
+    ~/.oh-my-zsh: zsh/omz
     ~/.oh-my-zsh/custom/plugins:
       force: true
       path: zsh/plugins
@@ -9,4 +12,3 @@
     ~/.p10k.zsh:
     ~/.zshrc:
       force: true
-    ~/.oh-my-zsh: zsh/omz
