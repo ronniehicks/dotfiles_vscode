@@ -15,11 +15,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(colored-man-pages dotenv encode64 extract git sudo transfer zsh-autosuggestions zsh-completions zsh-syntax-highlighting zsh-nvm)
 source $ZSH/oh-my-zsh.sh
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
 
 # initialize autocomplete here, otherwise functions won't be loaded
 fpath+=~/.zfunc

@@ -19,15 +19,5 @@
     ~/.vimrc:
     ~/.zshrc:
       force: true
-    # ~/.gitconfig:
-    # ~/.gitconfig.local:
-    # ~/.gitignore:
 - shell:
     - chsh -s $(which zsh) $(whoami)
-    - git submodule sync --recursive
-    - git submodule update --init --recursive --force --remote
-    # - >
-    #   git clean -fdx
-    #   shell/plugins/
-    #   vim/pack/vendor/start/
-    #   zsh/plugins/
