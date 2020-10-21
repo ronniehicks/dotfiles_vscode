@@ -1,8 +1,7 @@
 - link:
     ~/.gitconfig:
-    ~/.gitignore:
     ~/.gitconfig.local:
 - shell:
-    - command: read git_email && sed -e "s/AUTHOREMAIL/$git_email/g" gitconfig.local
+    - command: [read git_email && sed -e "s/AUTHOREMAIL/$git_email/g" gitconfig.local, Reading git email]
       stdin: true
       description: What email do you want to use for Git?
