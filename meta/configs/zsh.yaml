@@ -9,6 +9,3 @@
     ~/.p10k.zsh:
     ~/.zshrc:
       force: true
-    ~/.oh-my-zsh:
-      force: true
-      path: zsh/omz
