@@ -9,6 +9,3 @@
     ~/.p10k.zsh:
     ~/.zshrc:
       force: true
-- shell:
-    - sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    - chsh -s $(which zsh) $(whoami)
