@@ -1,5 +1,4 @@
 - link:
-    ~/.oh-my-zsh: zsh/omz
     ~/.oh-my-zsh/custom/plugins/:
       force: true
       glob: true

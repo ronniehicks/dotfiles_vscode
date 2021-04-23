@@ -2,4 +2,7 @@
     ~/Brewfile: macos/Brewfile
 
 - shell:
-    - brew bundle
+    - 
+      command: brew bundle --file ~/Brewfile
+      stdout: true
+      stderr: true
