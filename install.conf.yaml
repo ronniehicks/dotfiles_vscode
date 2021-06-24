@@ -8,12 +8,9 @@
     ~/.dotfiles: ""
     ~/.shell:
     ~/.vim:
-    ~/.oh-my-zsh/custom/plugins:
+    ~/.oh-my-zsh:
       force: true
-      path: zsh/plugins
-    ~/.oh-my-zsh/custom/themes:
-      force: true
-      path: zsh/themes
+      path: zsh/omz
     ~/.zsh:
     ~/.p10k.zsh:
     ~/.vimrc:
@@ -22,3 +19,10 @@
 - shell:
     - git submodule sync --recursive
     - git submodule update --init --recursive --force --remote
+- link:
+    ~/.oh-my-zsh/custom/plugins:
+      force: true
+      path: zsh/plugins
+    ~/.oh-my-zsh/custom/themes:
+      force: true
+      path: zsh/themes

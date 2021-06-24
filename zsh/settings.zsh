@@ -3,7 +3,7 @@ export PROJECTS=$HOME/src
 
 export ZSH=$HOME/.oh-my-zsh
 export DEFAULT_USER=`whoami`
-export NVM_LAZY_LOAD=true
+#export NVM_LAZY_LOAD=true
 export NVM_AUTO_USE=true
 export NVM_COMPLETION=true
 
@@ -13,7 +13,7 @@ export CLICOLOR=true
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(colored-man-pages dotenv encode64 extract git sudo transfer zsh-autosuggestions zsh-completions zsh-syntax-highlighting zsh-nvm)
+plugins=(aws colored-man-pages docker dotenv encode64 extract git jira osx pyenv sdk sudo transfer web-search zsh-autosuggestions zsh-completions zsh-syntax-highlighting zsh-nvm)
 source $ZSH/oh-my-zsh.sh
 
 # initialize autocomplete here, otherwise functions won't be loaded
