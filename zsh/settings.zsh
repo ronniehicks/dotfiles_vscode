@@ -13,7 +13,7 @@ export CLICOLOR=true
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(aws colored-man-pages docker dotenv encode64 extract git jira osx pyenv sdk sudo transfer web-search zsh-autosuggestions zsh-completions zsh-syntax-highlighting zsh-nvm)
+plugins=(aws colored-man-pages docker dotenv encode64 extract git jira macos pyenv sdk sudo transfer web-search zsh-autosuggestions zsh-completions zsh-syntax-highlighting zsh-nvm)
 source $ZSH/oh-my-zsh.sh
 
 # initialize autocomplete here, otherwise functions won't be loaded
