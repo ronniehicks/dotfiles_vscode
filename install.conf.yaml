@@ -13,6 +13,8 @@
       path: zsh/omz
     ~/.zsh:
     ~/.p10k.zsh:
+    ~/.profile:
+    ~/.zprofile:
     ~/.vimrc:
     ~/.zshrc:
       force: true

@@ -9,5 +9,6 @@
       path: zsh/themes/*
     ~/.zsh:
     ~/.p10k.zsh:
+    ~/.zprofile:
     ~/.zshrc:
       force: true
