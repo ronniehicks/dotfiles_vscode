@@ -1,27 +1,43 @@
-Dotfiles Template
-=================
+ronniehicks' Dotfiles
+========================
 
-This is a template repository for bootstrapping your dotfiles with [Dotbot][dotbot].
+This is Ronnie Hicks' personal dotfiles repository using [Dotbot][dotbot].
 
-To get started, you can [create a new repository from this template][template]
-(or you can [fork][fork] this repository, if you prefer). You can probably
-delete this README and rename your version to something like just `dotfiles`.
+To get started configuring your own dotfiles with [Dotbot][dotbot] check out this [template][template] (or [fork][fork] it).
 
-In general, you should be using symbolic links for everything, and using git
-submodules whenever possible.
+Usage
+-----------
 
-To keep submodules at their proper versions, you could include something like
-`git submodule update --init --recursive` in your `install.conf.yaml`.
+This repository uses a combination of methods derived from various other [Dotbot][dotbot] users to setup my machines in a number of situations. But the base expectation is that you clone this repository and run
 
-To upgrade your submodules to their latest versions, you could periodically run
-`git submodule update --init --remote`.
+```sh
+./install
+```
+
+This will setup what I consider the base necessities for how I tend to work across multiple machines. After having run the primary installation use the [meta][meta] profiles and configs to customize the machine further.
+
+For example, to setup my WSL2 (Ubuntu) Windows machine I run the following commands:
+
+```sh
+sudo apt update
+sudo apt upgrade
+
+sudo apt install git # just to make sure git is present
+
+cd ~
+git clone https://github.com/ronniehicks/dotfiles.git
+
+cd dotfiles
+./install
+
+./install-profile wsl
+# or ./install-standalone git
+```
 
 Inspiration
 -----------
 
-If you're looking for inspiration for how to structure your dotfiles or what
-kinds of things you can include, you could take a look at some repos using
-Dotbot.
+See the below repositories for inspirational ideas while using [Dotbot][dotbot].
 
 * [anishathalye's dotfiles][anishathalye_dotfiles]
 * [csivanich's dotfiles][csivanich_dotfiles]
@@ -56,3 +72,4 @@ Dotbot (or this repository) to help other people discover Dotbot.
 [wazery_dotfiles]: https://github.com/wazery/dotfiles
 [thirtythreeforty_dotfiles]: https://github.com/thirtythreeforty/dotfiles
 [dotbot-users]: https://github.com/anishathalye/dotbot/wiki/Users
+[meta]: /meta/

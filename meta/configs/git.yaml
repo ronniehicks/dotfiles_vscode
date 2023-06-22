@@ -1,8 +1,8 @@
 - link:
     ~/.gitconfig:
-    ~/.gitconfig.local:
 - shell:
-    - command: read git_email && sed -i "s/AUTHOREMAIL/$git_email/g" gitconfig.local
+    - command: read git_email && sed -i "s/AUTHOREMAIL/$git_email/g" gitconfig
       stdin: true
       description: What email do you want to use for Git?
       quiet: true
+    - [git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe", Setting up GCM]

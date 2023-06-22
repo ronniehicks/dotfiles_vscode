@@ -12,6 +12,8 @@
       force: true
       path: zsh/omz
     ~/.zsh:
+      glob: true
+      exclude: [ zsh/omz, zsh/plugins, zsh/themes ]
     ~/.p10k.zsh:
     ~/.profile:
     ~/.zprofile:
