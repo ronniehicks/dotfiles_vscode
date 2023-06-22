@@ -1,6 +1,6 @@
-# Local/private config goes in the include
-[include]
-    path = ~/.gitconfig.local
+[user]
+    name = "Ronnie Hicks"
+    email = "hicks.ronnie@gmail.com"
 
 [hub]
     protocol = https
@@ -35,9 +35,10 @@
     ui = true
 
 [core]
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
     editor = vim
-	autocrlf = input
+    autocrlf = input
+    pager =
 
 [apply]
     whitespace = nowarn
@@ -63,6 +64,6 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-
-[pager]
-	branch = false
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+	useHttpPath = true

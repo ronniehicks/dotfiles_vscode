@@ -12,8 +12,6 @@
       force: true
       path: zsh/omz
     ~/.zsh:
-      glob: true
-      exclude: [ zsh/omz, zsh/plugins, zsh/themes ]
     ~/.p10k.zsh:
     ~/.profile:
     ~/.zprofile:
@@ -24,9 +22,10 @@
     - git submodule sync --recursive
     - git submodule update --init --recursive --force --remote
 - link:
-    ~/.oh-my-zsh/custom/plugins:
+    ~/.oh-my-zsh/custom/plugins/:
       force: true
-      path: zsh/plugins
-    ~/.oh-my-zsh/custom/themes:
+      glob: true
+      path: zsh/plugins/*
+    ~/.oh-my-zsh/custom/themes/powerlevel10k:
       force: true
-      path: zsh/themes
+      path: zsh/themes/powerlevel10k
